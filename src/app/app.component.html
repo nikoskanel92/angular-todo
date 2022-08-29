@@ -1,12 +1,12 @@
 <h1 style = "text-align: center;">Todo List</h1>
 
-
+<br>
 <div class = container>
-  <div class="row justify-content-mdcenter">
+  <div class="row justify-content-md-center">
     <div class = "col col-lg-3">
     <div class="input-group mb-3">
     <input type="text" class="form-control" placeholder="Enter Todo" aria-label="Enter Todo" aria-describedby="button-addon2">
-    <button class="btn btn-outline-secondary btn-primary" type="button" id="button-addon2" style="color: white;">Add Todo</button>
+    <button class="btn btn-outline-secondary btn-primary" type="button" id="button-addon2" [(ngModel)]="newTodo" style="color: white;" (click)="saveTodo()">Add Todo</button>
   </div>
       <table class="table table-striped">
       <tbody>

@@ -17,7 +17,7 @@ export class AppComponent  {
       todo.name = this.newTodo;
       todo.isCompleted = true;
       this.todos.push(todo);
-      this.newTodo.valueOf() - ''.valueOf();
+      this.newTodo = '';
     }else{
       alert('Please enter Todo')
     }
