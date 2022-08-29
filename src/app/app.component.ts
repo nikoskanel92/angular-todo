@@ -19,7 +19,7 @@ export class AppComponent  {
       this.todos.push(todo);
       this.newTodo = '';
     }else{
-      alert('Please enter Todo')
+      alert('Please enter Todo');
     }
   }
 }
