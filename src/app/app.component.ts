@@ -23,3 +23,11 @@ export class AppComponent  {
     }
   }
 }
+
+deleteTodo() {
+  if(todo.isCompleted){
+    let todo = new Todo();
+    this.todos.splice(todo);
+    
+  }
+}
