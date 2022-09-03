@@ -22,12 +22,16 @@ export class AppComponent  {
       alert('Please enter Todo');
     }
   }
-}
 
-deleteTodo() {
-  if(todo.isCompleted){
-    let todo = new Todo();
-    this.todos.splice(todo);
-    
+
+  done(id:number){
+    this.todos[id].isCompleted = !this.todos[id].isCompleted;
+  }
+
+  deleteTodo() {
+    if(this.newTodo){
+      let todo = new Todo();
+      
+    }
   }
 }
